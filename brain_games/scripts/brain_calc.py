@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from random import randint
+from random import choice
 import prompt
 
 
@@ -11,11 +12,12 @@ def main():
     attempt = 3
     while attempt > 0:
 
-        number_a = randint(1, 100)
-        number_b = randint(1, 100)
-        print('Question:', number_a, ' + ', number_b)
+        number_a = str(randint(1, 100))
+        number_b = str(randint(1, 100))
+        math_operation = choice(['+', '-', '*'])
+        print('Question:', number_a, math_operation, number_b)
         answer = prompt.string('Your answer: ')
-        correct = str(number_a + number_b)
+        correct = str(eval(number_a + math_operation + number_b))
         if answer == correct:
             print('Correct!')
         else:
