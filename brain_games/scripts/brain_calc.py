@@ -15,7 +15,7 @@ def main():
         number_b = randint(1, 100)
         print('Question:', number_a, ' + ', number_b)
         answer = prompt.string('Your answer: ')
-        correct = str(number_a+number_b)
+        correct = str(number_a + number_b)
         if answer == correct:
             print('Correct!')
         else:
