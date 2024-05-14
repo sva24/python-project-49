@@ -4,3 +4,5 @@ dist/hexlet_code-0.1.0.tar.gz
 brain_games/__pycache__/cli.cpython-310.pyc
 brain_games/scripts/__pycache__/__init__.cpython-310.pyc
 brain_games/scripts/__pycache__/brain_games.cpython-310.pyc
+brain_games/__pycache__/
+dist/
