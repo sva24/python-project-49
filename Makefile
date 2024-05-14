@@ -16,3 +16,5 @@ package-install: # установка пакета из ОС
 
 lint: # запуск линтера
 	poetry run flake8 brain_games
+reinstall: # пересборка пакета
+	python3 -m pip install --user --force-reinstall dist/*.whl
