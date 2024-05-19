@@ -1,6 +1,5 @@
 from brain_games.scripts.brain_engine import play_game
 from random import randint
-from random import choice
 import prompt
 
 
