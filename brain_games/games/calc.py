@@ -5,7 +5,9 @@ from brain_games.scripts.brain_engine import play_game
 
 
 def calc_number():
-    """Функция для игры в калькулятор"""
+    """
+    Функция для игры в калькулятор
+    """
 
     number_a = str(randint(1, 100))
     number_b = str(randint(1, 100))

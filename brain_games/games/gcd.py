@@ -4,7 +4,9 @@ import prompt
 
 
 def gcd_game():
-    """Функция для игры в НОД"""
+    """
+    Функция для игры в НОД
+    """
 
     print('Find the greatest common divisor of given numbers.')
     number_a = randint(1, 100)

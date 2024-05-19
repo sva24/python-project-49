@@ -4,7 +4,9 @@ from brain_games.scripts.brain_engine import play_game
 
 
 def even_game():
-    """Функция для игры в чёт-нечёт"""
+    """
+    Функция для игры в чёт-нечёт
+    """
 
     print('Answer "yes" if the number is even, otherwise answer "no".')
     number = randint(1, 100)
