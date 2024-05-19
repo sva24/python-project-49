@@ -25,6 +25,7 @@ def prime_game():
     correct = 'yes' if is_prime(n) else 'no'
     return answer, correct
 
+
 def main():
     play_game(prime_game)
 
