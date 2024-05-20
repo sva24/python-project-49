@@ -5,6 +5,7 @@ import prompt
 def play_game(game_name):
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
     attempt = 3
     while attempt > 0:
         answer, correct = game_name()
