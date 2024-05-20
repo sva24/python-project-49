@@ -1,4 +1,3 @@
-from brain_games.scripts.brain_engine import play_game
 from random import randint
 import prompt
 
@@ -20,11 +19,3 @@ def gcd_game():
             number_b %= number_a
     correct = str(number_a or number_b)
     return answer, correct
-
-
-def main():
-    play_game(gcd_game)
-
-
-if __name__ == "__main__":
-    main()

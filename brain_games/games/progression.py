@@ -1,4 +1,3 @@
-from brain_games.scripts.brain_engine import play_game
 from random import randint
 from random import choice
 import prompt
@@ -24,11 +23,3 @@ def progression_game():
 
     answer = prompt.string('\nYour answer: ')
     return answer, str(correct)
-
-
-def main():
-    play_game(progression_game)
-
-
-if __name__ == "__main__":
-    main()
