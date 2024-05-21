@@ -1,5 +1,4 @@
 from random import randint
-import prompt
 
 
 def is_prime(a: int) -> bool:
@@ -16,13 +15,16 @@ def is_prime(a: int) -> bool:
         return False
 
 
+def get_game_rules():
+    """Правила игры"""
+    return 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
 def prime_game():
     """
     Функция для игры в простое число
     """
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    n = randint(2, 15)
-    print('Question:', n)
-    answer = prompt.string('Your answer: ')
-    correct = 'yes' if is_prime(n) else 'no'
-    return answer, correct
+
+    question = randint(2, 15)
+    correct = 'yes' if is_prime(question) else 'no'
+    return correct, question

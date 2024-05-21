@@ -1,14 +1,21 @@
-# from brain_games.games.even import even_number
 import prompt
 
 
-def play_game(game_name):
+def play_game(game_name, get_game_rules):
+    """
+    Основной движок для игр.
+    Сюда вынесено всё взаимодействие с игроком
+    """
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
+    rules = get_game_rules()
+    print(rules)
     attempt = 3
     while attempt > 0:
-        answer, correct = game_name()
+        correct, question = game_name()
+        print('Question:', question)
+        answer = prompt.string('Your answer: ')
         if answer == correct:
             print('Correct!')
         else:

@@ -1,5 +1,16 @@
 from random import randint
-import prompt
+
+
+def is_even(n:  int) -> bool:
+    """
+    Функция вычисления четного числа
+    """
+    return True if n % 2 == 0 else False
+
+
+def get_game_rules():
+    """Правила игры"""
+    return 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def even_game():
@@ -7,9 +18,6 @@ def even_game():
     Функция для игры в чёт-нечёт
     """
 
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    number = randint(1, 100)
-    print('Question:', number)
-    answer = prompt.string('Your answer: ')
-    correct = 'yes' if number % 2 == 0 else 'no'
-    return answer, correct
+    question = randint(1, 100)
+    correct = 'yes' if is_even(question) else 'no'
+    return correct, question
