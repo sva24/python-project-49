@@ -1,4 +1,5 @@
 from random import randint
+GAME_RULES = 'Find the greatest common divisor of given numbers.'
 
 
 def get_gcd(a: int, b: int) -> str:
@@ -8,11 +9,6 @@ def get_gcd(a: int, b: int) -> str:
     while b != 0:
         a, b = b, a % b
     return str(abs(a))
-
-
-def get_game_rules():
-    """Правила игры"""
-    return 'Find the greatest common divisor of given numbers.'
 
 
 def gcd_game():

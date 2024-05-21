@@ -1,5 +1,6 @@
 from random import randint
 from random import choice
+GAME_RULES = 'What number is missing in the progression?.'
 
 
 def generate_progression(start: int, step: int, range_progression: int) -> list:
@@ -8,11 +9,6 @@ def generate_progression(start: int, step: int, range_progression: int) -> list:
     """
     progression = [start + i * step for i in range(range_progression)]
     return progression
-
-
-def get_game_rules():
-    """Правила игры"""
-    return 'What number is missing in the progression?.'
 
 
 def progression_game():

@@ -1,4 +1,5 @@
 import prompt
+ATTEMPT = 3
 
 
 def play_game(game_name, get_game_rules):
@@ -9,9 +10,9 @@ def play_game(game_name, get_game_rules):
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    rules = get_game_rules()
+    rules = get_game_rules
     print(rules)
-    attempt = 3
+    attempt = ATTEMPT
     while attempt > 0:
         correct, question = game_name()
         print('Question:', question)

@@ -1,5 +1,6 @@
 from random import choice
 from random import randint
+GAME_RULES = 'What is the result of the expression?'
 
 
 def calc_number(a: int, operation: str, b: int) -> str:
@@ -7,11 +8,6 @@ def calc_number(a: int, operation: str, b: int) -> str:
     Функция вычисления
     """
     return str(eval(str(a) + operation + str(b)))
-
-
-def get_game_rules():
-    """Правила игры"""
-    return 'What is the result of the expression?'
 
 
 def calc_game():

@@ -1,4 +1,5 @@
 from random import randint
+GAME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(a: int) -> bool:
@@ -13,11 +14,6 @@ def is_prime(a: int) -> bool:
         return True
     else:
         return False
-
-
-def get_game_rules():
-    """Правила игры"""
-    return 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def prime_game():
