@@ -5,7 +5,7 @@ def is_even(n: int) -> bool:
     """
     Функция вычисления четного числа
     """
-    return True if n % 2 == 0 else False
+    return n % 2 == 0
 
 
 def get_game_rules():

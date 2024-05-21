@@ -19,8 +19,10 @@ def progression_game():
     """
     Функция для игры в арифметическую прогрессию
     """
-
-    progression = generate_progression(randint(1, 20), randint(1, 20), randint(5, 10))
+    start_prog = randint(1, 20)
+    step_prog = randint(1, 20)
+    range_prog = randint(5, 10)
+    progression = generate_progression(start_prog, step_prog, range_prog)
     correct = choice(progression)
     question = ' '.join(['..' if n == correct else str(n) for n in progression])
     return str(correct), question
