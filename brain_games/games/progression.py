@@ -22,5 +22,5 @@ def progression_game():
 
     progression = generate_progression(randint(1, 20), randint(1, 20), randint(5, 10))
     correct = str(choice(progression))
-    question = '' + ' '.join(['..' if n == correct else str(n) for n in progression])
+    question = ' '.join(['..' if n == correct else str(n) for n in progression])
     return correct, question

@@ -1,7 +1,7 @@
 from random import randint
 
 
-def is_even(n:  int) -> bool:
+def is_even(n: int) -> bool:
     """
     Функция вычисления четного числа
     """
